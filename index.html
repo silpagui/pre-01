@@ -3,6 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="index.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +16,172 @@
 	</head>
 	<body>
 		<header>
-			<input />
+			<form>
+				<label for="search">
+					<img src="./assets/search.svg" alt="Search" />
+					<input type="search" id="search" name="search" placeholder="Search" />
+				</label>
+			</form>
+			<a href="">
+				<img src="./assets/user.svg" alt="User" />
+				Enter Name Here
+			</a>
+			<a href="">
+				<img src="./assets/chat.svg" alt="Chat" />
+				Chat
+			</a>
+			<a href="">
+				<img src="./assets/settings.svg" alt="Settings" />
+				Chat
+			</a>
 		</header>
-		<div></div>
+		<div>
+			<aside>
+				<ul>
+					<li>
+						<a href="">
+							<img src="./assets/user.svg" alt="User" />
+							Enter Name Here
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="./assets/edit.svg" alt="Edit profile" />
+							Edit Profile
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="./assets/news.svg" alt="News Feed" />
+							News Feed
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="./assets/chat.svg" alt="Chat" />
+							Chat
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="./assets/events.svg" alt="Events" />
+							Events
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="./assets/photo.svg" alt="Photos" />
+							Photos
+						</a>
+					</li>
+					<li>
+						<a href="">Pages</a>
+					</li>
+					<li>
+						<a href="">Groups</a>
+					</li>
+					<li>
+						<a href="">Apps</a>
+					</li>
+				</ul>
+			</aside>
+			<main>
+				<form>
+					<input type="text" id="post-title" placeholder="Enter Title Here" />
+					<img src="./assets/user.svg" alt="User" />
+					<textarea name="post-content" placeholder="What's on your mind?">
+					</textarea>
+					<input type="submit" value="Post" />
+				</form>
+				<article>
+					<div>
+						<img src="./assets/user.svg" alt="User" />
+						<h2>Enter Name Here</h2>
+					</div>
+					<img src="https://picsum.photos/300/200" alt="Post image" />
+					<img src="./assets/like.svg" alt="Like" />
+					<form>
+						<label for="post-comment">
+							<img src="./assets/user.svg" alt="User" />
+							<input
+								type="text"
+								id="post-comment"
+								name="post-comment"
+								placeholder="Write a comment"
+							/>
+							<img src="./assets/photo.svg" alt="Post photo" />
+						</label>
+					</form>
+				</article>
+				<article>
+					<div>
+						<img src="./assets/user.svg" alt="User" />
+						<h2>Enter Name Here</h2>
+					</div>
+					<img src="https://picsum.photos/300/200" alt="Post image" />
+					<img src="./assets/like.svg" alt="Like" />
+					<form>
+						<label for="post-comment-2">
+							<img src="./assets/user.svg" alt="User" />
+							<input
+								type="text"
+								id="post-comment-2"
+								name="post-comment-2"
+								placeholder="Write a comment"
+							/>
+							<img src="./assets/photo.svg" alt="Post photo" />
+						</label>
+					</form>
+				</article>
+			</main>
+			<aside>
+				<div>
+					<img src="./assets/doc.svg" alt="Doc" />
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+				<div>
+					<div>
+						<h3>Trending</h3>
+						<img src="./assets/trends.svg" alt="Trending" />
+					</div>
+					<ul>
+						<li>
+							<a href="">
+								<img src="./assets/circle.svg" alt="Trending post" />
+								Lorem ipsum dolor sit amet
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="./assets/circle.svg" alt="Trending post" />
+								Lorem ipsum dolor sit amet
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="./assets/circle.svg" alt="Trending post" />
+								Lorem ipsum dolor sit amet
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="./assets/down-arrow.svg" alt="See more" />
+								See More
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<div>
+						<h2>Sponsored</h2>
+						<img src="./assets/down-arrow.svg" alt="See more" />
+					</div>
+					<img src="https://picsum.photos/200/500" alt="Sponsor image" />
+				</div>
+			</aside>
+		</div>
 	</body>
 </html>
