@@ -15,11 +15,17 @@
 		<title>Assignment 01</title>
 	</head>
 	<body>
-		<header>
-			<form>
-				<label for="search">
+		<header class="header">
+			<form class="search-form">
+				<label for="search" class="search-form__label">
 					<img src="./assets/search.svg" alt="Search" />
-					<input type="search" id="search" name="search" placeholder="Search" />
+					<input
+						type="search"
+						id="search"
+						name="search"
+						placeholder="Search"
+						class="search-form__input"
+					/>
 				</label>
 			</form>
 			<a href="">
@@ -35,9 +41,9 @@
 				Chat
 			</a>
 		</header>
-		<div>
-			<aside>
-				<ul>
+		<div class="content">
+			<aside class="aside">
+				<ul class="user-profile">
 					<li>
 						<a href="">
 							<img src="./assets/user.svg" alt="User" />
@@ -85,69 +91,113 @@
 					</li>
 				</ul>
 			</aside>
-			<main>
-				<form>
-					<input type="text" id="post-title" placeholder="Enter Title Here" />
-					<img src="./assets/user.svg" alt="User" />
-					<textarea name="post-content" placeholder="What's on your mind?">
-					</textarea>
-					<input type="submit" value="Post" />
+			<main class="main-posts">
+				<form class="post">
+					<input
+						type="text"
+						id="post-title-input"
+						placeholder="Enter Title Here"
+						class="post-title-input"
+					/>
+					<div class="post-field-container">
+						<div class="post-field">
+							<img src="./assets/user.svg" alt="User" />
+							<textarea
+								name="post-content"
+								placeholder="What's on your mind?"
+								rows="10"
+							></textarea>
+						</div>
+						<input type="submit" value="Post" class="post-submit-btn" />
+					</div>
 				</form>
-				<article>
-					<div>
-						<img src="./assets/user.svg" alt="User" />
+				<article class="post post-article">
+					<div class="post-article__title">
+						<img
+							src="./assets/user.svg"
+							alt="User"
+							class="post-article__user"
+						/>
 						<h2>Enter Name Here</h2>
 					</div>
-					<img src="https://picsum.photos/300/200" alt="Post image" />
-					<img src="./assets/like.svg" alt="Like" />
+					<img
+						src="https://picsum.photos/300/200"
+						alt="Post image"
+						class="post-article__image"
+					/>
+					<a href="" class="like-icon">
+						<img src="./assets/like.svg" alt="Like" class="like-icon" />
+						Like
+					</a>
 					<form>
-						<label for="post-comment">
+						<label for="post-comment" class="post-article__comment">
 							<img src="./assets/user.svg" alt="User" />
 							<input
 								type="text"
 								id="post-comment"
 								name="post-comment"
 								placeholder="Write a comment"
+								class="post-article__comment-input"
 							/>
-							<img src="./assets/photo.svg" alt="Post photo" />
+							<img
+								src="./assets/photo.svg"
+								alt="Post photo"
+								class="post-photo"
+							/>
 						</label>
 					</form>
 				</article>
-				<article>
-					<div>
-						<img src="./assets/user.svg" alt="User" />
+				<article class="post post-article">
+					<div class="post-article__title">
+						<img
+							src="./assets/user.svg"
+							alt="User"
+							class="post-article__user"
+						/>
 						<h2>Enter Name Here</h2>
 					</div>
-					<img src="https://picsum.photos/300/200" alt="Post image" />
-					<img src="./assets/like.svg" alt="Like" />
+					<img
+						src="https://picsum.photos/300/200"
+						alt="Post image"
+						class="post-article__image"
+					/>
+					<a href="" class="like-icon">
+						<img src="./assets/like.svg" alt="Like" class="like-icon" />
+						Like
+					</a>
 					<form>
-						<label for="post-comment-2">
+						<label for="post-comment-2" class="post-article__comment">
 							<img src="./assets/user.svg" alt="User" />
 							<input
 								type="text"
 								id="post-comment-2"
 								name="post-comment-2"
 								placeholder="Write a comment"
+								class="post-article__comment-input"
 							/>
-							<img src="./assets/photo.svg" alt="Post photo" />
+							<img
+								src="./assets/photo.svg"
+								alt="Post photo"
+								class="post-photo"
+							/>
 						</label>
 					</form>
 				</article>
 			</main>
-			<aside>
-				<div>
+			<aside class="aside">
+				<div class="news">
 					<img src="./assets/doc.svg" alt="Doc" />
-					<p>
+					<p class="news__text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 				</div>
-				<div>
-					<div>
+				<div class="trending-news">
+					<div class="news-header">
 						<h3>Trending</h3>
 						<img src="./assets/trends.svg" alt="Trending" />
 					</div>
-					<ul>
+					<ul class="trending-news__list">
 						<li>
 							<a href="">
 								<img src="./assets/circle.svg" alt="Trending post" />
@@ -175,11 +225,19 @@
 					</ul>
 				</div>
 				<div>
-					<div>
+					<div class="news-header">
 						<h2>Sponsored</h2>
-						<img src="./assets/down-arrow.svg" alt="See more" />
+						<img
+							src="./assets/down-arrow.svg"
+							alt="See more"
+							class="see-more"
+						/>
 					</div>
-					<img src="https://picsum.photos/200/500" alt="Sponsor image" />
+					<img
+						src="https://picsum.photos/200/500"
+						alt="Sponsor image"
+						class="sponsor-image"
+					/>
 				</div>
 			</aside>
 		</div>
